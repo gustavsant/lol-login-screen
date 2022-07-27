@@ -7,7 +7,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
 main{
-    background-color: #121212;
+    background-color: #1f1f1f;
     display: flex;
     flex-direction: row-reverse;
     height: 100vh;
@@ -21,6 +21,7 @@ main{
     height: 90%;
     display: flex;
     flex-direction: row-reverse;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .mainField{
     height: 100%;
@@ -45,6 +46,9 @@ main{
     padding: 12px;
     font-weight: bolder;
 }
+.inputs:focus{
+    outline: 1px solid black;
+}
 .loginForm h1{
     font-weight: 700;
     font-size: 1.8rem;
@@ -57,6 +61,35 @@ main{
     gap: 5px;
     padding-left: 10px;
 }
+.buttonDiv{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#botaoLogin{
+    height: 60px;
+    border-radius: 18px;
+    width: 60px;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+#botaoLogin img{
+    height: 30px;
+}
+#botaoLogin:hover{
+    background-color: #EB0029;
+}
+#botaoLogin:hover img{
+    filter: invert(1);
+}
+
+#botaoLogin:disabled{
+    opacity: 10%;
+    pointer-events: none;
+    border: 2px solid gray;
+}
 .loginTop{
     font-size: 0.8em;
     font-weight: 800;
@@ -66,13 +99,13 @@ main{
     gap: 100px;
     margin-bottom: 100px;
 }
+
 .loginLink{
     height: 40px;
     color: #8d8d8d;
     font-size: 0.7rem;
     font-weight: 800;
-    display: flex;
-    flex-flow: column-reverse wrap;
+    display: inline;
 }
 .loginLink a{
     font-size: 0.7rem;
@@ -81,4 +114,5 @@ main{
 }
 .loginLink span{
     opacity: 50%;
+    padding-left: 100px;
 }

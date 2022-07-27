@@ -28,14 +28,32 @@
                     <label><input type="password" id="password" class="inputs" placeholder="PASSWORD"></label><br>
                     <div class="checkBox"><input type="checkbox" id="staylogCheck"><span>Stay signed in</span>
                     </div>
+                    <div class="buttonDiv">
+                        <button type="submit" disabled id="botaoLogin"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Arrow-right-512.png" ></button>
+                    </div>
+
                 </form>
                 <div class="loginLink">
-                    <a href="#">Create account</a>
+                    <a href="#">Create account</a><br><br>
                     <a href="#">Can't sign in?</a>
-                    <span>v1.10</span>
+                    <span>v1.02</span>
                 </div>
             </div>
         </div>
     </main>
+    <script>
+        const botaoLogin = document.querySelector('#botaoLogin')
+        const inputTxt = document.querySelectorAll('.inputs')
+        const Validate = ({target}) => {
+            if(target.value.length > 2){
+                botaoLogin.removeAttribute('disabled')
+            }else{
+                botaoLogin.setAttribute('disabled', '')
+            }
+        }
+        inputTxt.forEach((event) => {
+            event.addEventListener('input', Validate)
+        })
+    </script>
 </body>
 </html>
