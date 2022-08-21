@@ -9,6 +9,7 @@
 main {
   height: 100vh;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -21,19 +22,22 @@ main {
 .container .form-box {
   min-width: 350px;
   min-height: 100%;
-  border: 1px solid tomato;
   padding: 25px;
 }
 .container .form-box .logo-box {
   text-align: center;
-  height: 99px;
+  height: 88px;
 }
 .container .form-box .logo-box img {
   height: 40px;
 }
 .container .form-box h2 {
+  line-height: 70px;
   text-align: center;
   height: 70px;
+}
+.container .form-box form {
+  margin-bottom: 55px;
 }
 .container .form-box form .input {
   position: relative;
@@ -57,9 +61,7 @@ main {
   transition: 0.5s;
 }
 .container .form-box form .form-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 10px;
 }
 .container .form-box form .form-buttons .face {
   background-color: blue;
@@ -78,17 +80,27 @@ main {
   border-radius: 5px;
 }
 .container .form-box form .form-buttons .socials img {
-  height: 15px;
+  height: 18px;
+  padding-top: 2px;
+}
+.container .form-box form .check-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.container .form-box form .check-container .check-label {
+  padding-left: 5px;
+  color: rgb(20, 20, 20);
+  font-size: 13px;
 }
 .container .form-box .form-bottom {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
-}
-.container .form-box .form-bottom button {
-  margin-bottom: 80px;
+  justify-content: space-between;
+  align-items: center;
+  height: 25%;
 }
 .container .form-box .form-bottom .links-footer {
-  border: 1px solid tomato;
   text-align: center;
 }/*# sourceMappingURL=style.css.map */
