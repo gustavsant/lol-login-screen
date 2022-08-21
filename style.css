@@ -15,14 +15,14 @@ main {
 }
 
 .container {
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   display: flex;
 }
 .container .form-box {
   min-width: 350px;
   min-height: 100%;
-  padding: 25px;
+  padding: 55px;
 }
 .container .form-box .logo-box {
   text-align: center;
@@ -46,10 +46,16 @@ main {
   background-color: rgb(225, 225, 225);
   height: 50px;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   border: none;
   outline: none;
-  padding: 13px;
+  padding-left: 13px;
+  padding-top: 4px;
+}
+.container .form-box form .input input:focus ~ .label-input,
+.container .form-box form .input input:valid ~ .label-input {
+  font-size: 12px;
+  transform: translateY(-14px);
 }
 .container .form-box form .input .label-input {
   font-size: 13px;
@@ -58,7 +64,7 @@ main {
   left: 13px;
   color: rgb(136, 136, 136);
   font-weight: 700;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .container .form-box form .form-buttons {
   margin-bottom: 10px;
@@ -101,6 +107,40 @@ main {
   align-items: center;
   height: 25%;
 }
+.container .form-box .form-bottom button {
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  border: 1px solid rgb(225, 225, 225);
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.3s;
+}
+.container .form-box .form-bottom button i {
+  font-size: 32px;
+  background-color: transparent;
+}
+.container .form-box .form-bottom button:disabled {
+  background-color: white;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.container .form-box .form-bottom button:hover {
+  background-color: #EA0028;
+  color: white;
+}
 .container .form-box .form-bottom .links-footer {
+  text-transform: uppercase;
+  font-size: 10px;
   text-align: center;
+}
+.container .form-box .form-bottom .links-footer a {
+  text-decoration: none;
+  color: rgb(136, 136, 136);
+}
+.container .img-box {
+  width: 100%;
+  background-image: url("./images/camille_wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
 }/*# sourceMappingURL=style.css.map */
