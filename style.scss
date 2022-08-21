@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+$font-main-color: rgb(20, 20, 20);
+$font-secondary-color: rgb(136, 136, 136);
+$light-grey: rgb(225, 225, 225);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main{
+  height: 100vh;
+  @include flex-center()
+}
+
+.container{
+
+  height: 90%;
+  width: 90%;
+  display: flex;
+
+  .form-box{
+    min-width: 350px;
+    min-height: 100%;
+    border: 1px solid tomato;
+    padding: 25px;
+
+    .logo-box{
+      text-align: center;
+      height: 99px;
+
+  
+      img{
+        height: 40px;
+      }
+    } 
+  
+    h2{
+
+      text-align: center;
+      height: 70px;
+    } 
+  
+    form{
+      .input{
+        position: relative;
+
+        input{
+          background-color: $light-grey;
+          height: 50px;
+          width: 100%;
+          margin-bottom: 25px;
+          border: none;
+          outline: none;
+          padding: 13px;
+        }
+
+        .label-input{
+          font-size: 13px;
+          position: absolute;
+          top: 16px;
+          left: 13px;
+          color: $font-secondary-color;
+          font-weight: 700;
+          transition: .5s;
+        }
+      }
+      .form-buttons{
+        @include flex-between();
+
+        .face{
+          background-color: blue;
+        }
+        .google{
+          background-color: lightgray;
+        }
+        .apple{
+          background-color: black;
+        }
+        .socials {
+          padding: 5px;
+          width: 32%;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+
+          img{
+            height: 15px;
+          }
+        }
+      }
+    }
+    .form-bottom{
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+      button{
+        margin-bottom: 80px;
+      }
+      .links-footer{
+        border: 1px solid tomato;
+        text-align: center;
+      }
+    }
+  }
+}
+
+  
+

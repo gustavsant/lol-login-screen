@@ -1,118 +1,94 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
-main{
-    background-color: #1f1f1f;
-    display: flex;
-    flex-direction: row-reverse;
-    height: 100vh;
-    font-family: 'Lexend Deca', sans-serif;
-}
-#ornn{
-    height: 100%;
-}
-.container{
-    margin: auto;
-    height: 90%;
-    display: flex;
-    flex-direction: row-reverse;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.mainField{
-    height: 100%;
-    background-color: #F9F9F9;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 350px;
-    min-width: 350px;
-    max-width: 350px;
-    padding: 50px;
-} 
-.loginForm{
-    display: flex;
-    flex-direction: column;
-    height: 350px;
-    margin-top: -60px;
-}
-.inputs{
-    background-color: #EEEEEE;
-    border: none;
-    padding: 12px;
-    font-weight: bolder;
-}
-.inputs:focus{
-    outline: 1px solid black;
-}
-.loginForm h1{
-    font-weight: 700;
-    font-size: 1.8rem;
-    padding-bottom: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
 }
 
-.checkBox{
-    margin-top: 10px;
-    display: flex;
-    gap: 5px;
-    padding-left: 10px;
-}
-.buttonDiv{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#botaoLogin{
-    height: 60px;
-    border-radius: 18px;
-    width: 60px;
-    cursor: pointer;
-    transition: all 500ms ease;
+.container {
+  height: 90%;
+  width: 90%;
+  display: flex;
 }
-#botaoLogin img{
-    height: 30px;
+.container .form-box {
+  min-width: 350px;
+  min-height: 100%;
+  border: 1px solid tomato;
+  padding: 25px;
 }
-#botaoLogin:hover{
-    background-color: #EB0029;
+.container .form-box .logo-box {
+  text-align: center;
+  height: 99px;
 }
-#botaoLogin:hover img{
-    filter: invert(1);
+.container .form-box .logo-box img {
+  height: 40px;
 }
-
-#botaoLogin:disabled{
-    opacity: 10%;
-    pointer-events: none;
-    border: 2px solid gray;
+.container .form-box h2 {
+  text-align: center;
+  height: 70px;
 }
-.loginTop{
-    font-size: 0.8em;
-    font-weight: 800;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 100px;
-    margin-bottom: 100px;
+.container .form-box form .input {
+  position: relative;
 }
-
-.loginLink{
-    height: 40px;
-    color: #8d8d8d;
-    font-size: 0.7rem;
-    font-weight: 800;
-    display: inline;
+.container .form-box form .input input {
+  background-color: rgb(225, 225, 225);
+  height: 50px;
+  width: 100%;
+  margin-bottom: 25px;
+  border: none;
+  outline: none;
+  padding: 13px;
 }
-.loginLink a{
-    font-size: 0.7rem;
-    font-weight: 800;
-    color: #8d8d8d;
+.container .form-box form .input .label-input {
+  font-size: 13px;
+  position: absolute;
+  top: 16px;
+  left: 13px;
+  color: rgb(136, 136, 136);
+  font-weight: 700;
+  transition: 0.5s;
 }
-.loginLink span{
-    opacity: 50%;
-    padding-left: 100px;
+.container .form-box form .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.container .form-box form .form-buttons .face {
+  background-color: blue;
+}
+.container .form-box form .form-buttons .google {
+  background-color: lightgray;
+}
+.container .form-box form .form-buttons .apple {
+  background-color: black;
+}
+.container .form-box form .form-buttons .socials {
+  padding: 5px;
+  width: 32%;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.container .form-box form .form-buttons .socials img {
+  height: 15px;
+}
+.container .form-box .form-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.container .form-box .form-bottom button {
+  margin-bottom: 80px;
+}
+.container .form-box .form-bottom .links-footer {
+  border: 1px solid tomato;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

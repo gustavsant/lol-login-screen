@@ -5,28 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.90">
     <title>LoL</title>
-
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <main>
         <div class="container">
             
+            <div class="form-box">
+                <div class="logo-box">
+                    <img src="images/logo.png" alt="riot games logo" class="logo">
+                </div>
+                <h2>Fazer login</h2>
+                <form>
+                    <div class="user input">
+                        <input type="text" name="user" id="user">
+                        <label class="label-input" for="user">Nome de usuário</label>
+                    </div>
+                    <div class="pass input">
+                        <input type="text" name="pass" id="pass">
+                        <label class="label-input" for="pass">Senha</label>
+                    </div>
+                    <div class="form-buttons">
+                        <button class="face socials"><img src="images/facebook-icon.png" alt="facebook button"></button>
+                        <button class="google socials"><img src="images/google-icon.png" alt="google button"></button>
+                        <button class="apple socials"><img src="images/apple-icon.png" alt="apple button"></button>
+                    </div>
+                    <input type="checkbox" id="stay-login-check"> Manter login
+                </form>
+                <div class="form-bottom">
+                    <button>botao pra logar</button>
+                    <div class="links-footer">
+                        <a href="#">Link1</a><br>
+                        <a href="#">Link2</a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="/camille_wallpaper.jpg" alt="">
+            </div>
         </div>
     </main>
     <script>
-        const botaoLogin = document.querySelector('#botaoLogin')
-        const inputTxt = document.querySelectorAll('.inputs')
-        const Validate = ({target}) => {
-            if(target.value.length > 2){
-                botaoLogin.removeAttribute('disabled')
-            }else{
-                botaoLogin.setAttribute('disabled', '')
-            }
-        }
-        inputTxt.forEach((event) => {
-            event.addEventListener('input', Validate)
-        })
+        // const botaoLogin = document.querySelector('#botaoLogin')
+        // const inputTxt = document.querySelectorAll('.inputs')
+        // const Validate = ({target}) => {
+        //     if(target.value.length > 2){
+        //         botaoLogin.removeAttribute('disabled')
+        //     }else{
+        //         botaoLogin.setAttribute('disabled', '')
+        //     }
+        // }
+        // inputTxt.forEach((event) => {
+        //     event.addEventListener('input', Validate)
+        // })
     </script>
 </body>
 </html>
